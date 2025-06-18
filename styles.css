@@ -47,7 +47,7 @@ html, body {
 
 .logo img {
   height: 8vw;
-  max-height: 100px;
+  max-height: 200px;
 }
 
 .nav-links {
@@ -117,6 +117,7 @@ html, body {
   background-color: #161B22;
   padding: 0 2vw;
   text-align: center;
+  margin-top: auto;
 }
 
 .copyright p {
@@ -315,7 +316,7 @@ html, body {
   justify-content: center;
   align-items: start;
   background: rgba(0, 0, 0, 0.85);
-  top: 8vw; /* Push below header */
+  top: 8vw;
   left: 0;
   width: 100%;
   height: calc(100% - 8vw);
@@ -325,10 +326,14 @@ html, body {
 }
 
 .lightbox img {
-  max-width: 80vw;
-  max-height: 70vh;
+  max-width: 90vw;        
+  max-height: 90vh;       
+  width: 18%;           
+  height: auto;      
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: auto;
 }
 
 .close-btn {
@@ -339,4 +344,196 @@ html, body {
   color: #fff;
   cursor: pointer;
   z-index: 1001;
+}
+
+/* Hide topnav for desktop sites */
+.topnav {
+  display: none;
+}
+
+
+
+/* Mobile formatting */
+@media (max-width: 768px) {
+  .topnav {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background-color: #161B22;
+  }
+
+  #mobileMenu {
+    background-color: #161B22;
+    display: none;
+    width: 100%;
+    margin-top: 22vw;
+    position: fixed;
+    flex-direction: column;
+  }
+
+  #mobileMenu a {
+    padding: 3vw;
+    margin-right: auto;
+    color: white;
+  }
+
+  #mobileMenu.show {
+    display: flex;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    display: block;
+    position: left;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #2d3541;
+  }
+
+  .active {
+    color: white;
+  }
+
+  .header {
+    min-height: 22vw;
+    padding: 0 2vw;
+  }
+
+  .logo-text {
+    font-size: 4vw;
+  }
+
+  .logo img {
+    height: 12vw;
+    max-height: 55px;
+  }
+
+  /* Hide nav links */
+  .nav-links {
+    display: none;
+  }
+
+  .extras img {
+    height: 4vw;
+    max-height: 20px;
+  }
+
+  .background-image {
+    flex-grow: 1;
+    background: url('images/Header_55.png') center/cover no-repeat;
+    margin-top: auto;
+    min-height: 100px;
+  }
+
+  .background-overlay-text h1 {
+    text-align: center;
+    font-size: 5vw;
+  }
+
+  .background-overlay-text p {
+    text-align: center;
+    font-size: 4vw;
+    position: absolute;
+    transform: translate(-17%, -10%);
+  }
+
+  .footer {
+    min-height: 50px;
+  }
+
+  .copyright p {
+    font-weight: 400;
+    font-size: 2.5vw;
+  }
+
+  .contact-section {
+    margin-top: 20vw;
+    padding: 6vw;
+    font-size: 4vw;
+  }
+
+  .services-section {
+    margin-top: 20vw;
+    padding: 6vw;
+    font-size: 4vw;
+  }
+
+  .string-section {
+    display: grid;
+    margin-top: 20vw;
+    padding: 4vw;
+  }
+
+  .string-filters label {
+    margin-top: 2.3vw;
+    font-size: 2.5vw;
+  }
+
+  .string-filters select {
+    margin-top: 2vw;
+    font-size: 2.5vw;
+  }
+
+  .product-text {
+    font-size: 2.5vw;
+    margin-top: -6vw;
+    width: 60vw;
+  }
+
+.string-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+  gap: 2vw;
+  padding: 1vw;
+}
+
+.string-card {
+  background-color: #161B22;
+  padding: 2vw;
+  border: 1px solid #30363D;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.string-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.string-card .name {
+  margin-top: 1.4vw;
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+
+.string-card .price {
+  margin-bottom: 0.3vw;
+  font-weight: bold;
+  font-size: 2.5vw;
+  color: #8B949E;
+}
+
+  .category {
+    font-size: 2.5vw;
+  
+  }
+
+  .lightbox img {
+    max-width: 60vw;      
+    max-height: 70vh;    
+    width: 100%;         
+    height: auto;        
+  }
 }

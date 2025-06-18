@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Windsor Stringing</title>
   <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="/images/tennis_ball_favicon.png" type="image/png">
 </head>
+
 <body>
+
   <div class="page-wrapper">
+
     <header class="header">
+
+      <div class="topnav">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerClick()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <script>
+          function hamburgerClick() {
+            var x = document.getElementById("mobileMenu");
+            x.classList.toggle("show");
+          }
+        </script>
+      </div>
+
       <div class="logo">
-        <img src="/images/WS_logo.png" alt="Logo">
+        <a href="/">
+          <img src="/images/WS_logo.png" alt="Logo">
+        </a>
         <p class="logo-text">Windsor Stringing</p>
       </div>
+
       <nav class="nav-links">
         <a href="/">HOME</a>
         <a href="/products">PRODUCTS</a>
@@ -20,26 +42,39 @@
         <a href="/gallery">GALLERY</a>
         <a href="/contact">CONTACT</a>
       </nav>
+
       <div class="extras">
         <img src="/images/Flag_of_Canada.png" alt="Canada Flag">
       </div>
+
     </header>
 
-
     <section class="background-image">
+
+      <div class="topnav">
+        <div id="mobileMenu">
+          <a href="/">HOME</a>
+          <a href="/products">PRODUCTS</a>
+          <a href="/services">SERVICES</a>
+          <a href="/gallery">GALLERY</a>
+          <a href="/contact">CONTACT</a>
+        </div>
+      </div>
+
       <div class="background-overlay-text">
         <h1>Quality Tennis Racquet Stringing</h1>
         <p>Windsor, Ontario</p>
       </div>
-    </section>
-  
 
-    
+    </section>
+
     <footer class="footer">
       <div class="copyright">
         <p>© 2025 Windsor Stringing</p>
       </div>
     </footer>
+
     </div>
+
 </body>
 </html>

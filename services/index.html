@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Windsor Stringing</title>
   <link rel="stylesheet" href="/styles.css">
@@ -8,10 +9,27 @@
 </head>
 <body>
   <div class="page-wrapper">
+
     <header class="header">
 
+      <div class="topnav">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerClick()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <script>
+          function hamburgerClick() {
+            var x = document.getElementById("mobileMenu");
+            x.classList.toggle("show");
+          }
+        </script>
+      </div>
+
       <div class="logo">
-        <img src="/images/WS_logo.png" alt="Logo">
+        <a href="/">
+          <img src="/images/WS_logo.png" alt="Logo">
+        </a>
         <p class="logo-text">Windsor Stringing</p>
       </div>
 
@@ -29,34 +47,47 @@
 
     </header>
 
-    <section class="services-section">
-    <div class="services-info">
-      <p>
-        <h1>Stringing</h1> 
-        <strong>I only string tennis racquets. I apologize for any inconvenience.</strong><br><br>
-        Racquets are strung with one continuous string (2 knots) unless requested differently.<br><br>
-        <strong>$20 labor fee if you provide your own string.</strong> This fee is included in string prices. <br><br>
-        Possible stringing specifications:<br>
-        <ul>
-          <li>Tension</li>
-          <li>One or two piece stringing</li>
-          <li>Hybrid set-ups consisting of Mains and Crosses of a different material type</li>
-        </ul>
-
-        <h1>Stenciling</h1> Optional logo painting based on string color and brand. Note not all brands are available<br>
-
-        <h1>Labeling</h1> Tension, string type, and date tagged inside the frame unless otherwise requested.<br>
-
-        <h1>Overgrips</h1> HEAD Xtrasoft grips available in multiple colors with install for an extra $5.<br>
-      </p>
+    <div class="topnav">
+      <div id="mobileMenu">
+        <a href="/">HOME</a>
+        <a href="/products">PRODUCTS</a>
+        <a href="/services">SERVICES</a>
+        <a href="/gallery">GALLERY</a>
+        <a href="/contact">CONTACT</a>
+      </div>
     </div>
+    
+    <section class="services-section">
+      <div class="services-info">
+  
+        <p>
+          <h1>Stringing</h1> 
+          <strong>I only string tennis racquets. I apologize for any inconvenience.</strong><br><br>
+          Racquets are strung with one continuous string (2 knots) unless requested differently.<br><br>
+          <strong>$20 labor fee if you provide your own string.</strong> This fee is included in string prices. <br><br>
+          Possible stringing specifications:<br>
+          <ul>
+            <li>Tension</li>
+            <li>One or two piece stringing</li>
+            <li>Hybrid set-ups consisting of Mains and Crosses of a different material type</li>
+          </ul>
+
+          <h1>Stenciling</h1> Optional logo painting based on string color and brand. Note not all brands are available<br>
+
+          <h1>Labeling</h1> Tension, string type, and date tagged inside the frame unless otherwise requested.<br>
+
+          <h1>Overgrips</h1> HEAD Xtrasoft grips available in multiple colors with install for an extra $5.<br>
+        </p>
+      </div>
 
     </section>
+
     <footer class="footer">
       <div class="copyright">
         <p>© 2025 Windsor Stringing</p>
       </div>
     </footer>
+
     </div>
 </body>
 </html>
