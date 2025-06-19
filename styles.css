@@ -22,7 +22,7 @@ html, body {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   background-color: #161B22;
-  padding: 2vw 2vw;
+  padding: 0.1vw 2vw;
   z-index: 1001;
 }
 
@@ -249,7 +249,7 @@ html, body {
 
 .string-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(35vw, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(21vw, 1fr));
   gap: 2vw;
   padding: 20px;
 }
@@ -274,9 +274,8 @@ html, body {
 .string-card .name {
   margin-top: 1.4vw;
   font-weight: bold;
-  font-size: 18px;
+  font-size: clamp(8px, 1.5vw, 18px);
 }
-
 .string-card .price {
   margin-bottom: 0.3vw;
   font-weight: bold;
