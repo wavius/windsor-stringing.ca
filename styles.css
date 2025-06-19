@@ -360,7 +360,7 @@ html, body {
 
 
 /* Mobile formatting */
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .topnav {
     display: flex;
     overflow: hidden;
