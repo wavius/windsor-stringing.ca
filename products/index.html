@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -7,12 +8,14 @@
   <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="/images/tennis_ball_favicon.png" type="image/png">
 </head>
+
 <body>
   <div class="page-wrapper">
     <header class="header">
 
       <div class="topnav">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <a href="javascript:void(0);" class="icon" onclick="hamburgerClick()">
           <i class="fa fa-bars"></i>
         </a>
@@ -42,7 +45,7 @@
       <div class="extras">
         <img src="/images/Flag_of_Canada.png" alt="Canada Flag">
       </div>
-      
+
     </header>
 
     <div class="topnav">
@@ -56,9 +59,10 @@
     </div>
 
     <section class="string-section">
-      
+
       <div class="string-filters">
-        <p class="product-text">Available strings are shown below. Prices include string and labor. Please use the CONTACT tab to request a stringing job.</p>
+        <p class="product-text">Available strings are shown below. Prices include string and labor. Please use the
+          CONTACT tab to request a stringing job.</p>
         <div class="filter-controls">
           <label for="sort">Sort by:</label>
           <select id="filterSelect">
@@ -77,7 +81,7 @@
         </div>
 
         <div class="string-grid">
-          
+
           <div class="string-card">
             <img src="/images/Strings/Bab_RPM.jpg" alt="BABOLAT RPM Blast">
             <div class="string-info">
@@ -101,7 +105,7 @@
               <p class="price">$35</p>
             </div>
           </div>
-          
+
           <div class="string-card">
             <img src="/images/Strings/Yonex.jpg" alt="YONEX Poly Tour Pro">
             <div class="string-info">
@@ -133,7 +137,7 @@
               <p class="price">$35</p>
             </div>
           </div>
-          
+
           <div class="string-card">
             <img src="/images/Strings/GFlexi_Pentagon.png" alt="GFLEXI Extra Spin Pentagon">
             <div class="string-info">
@@ -198,25 +202,26 @@
         <div class="category">
           <h1>Synthetic Gut Strings</h1>
         </div>
-      
+
         <div class="string-grid">
+
+          <div class="string-card">
+            <img src="/images/Strings/wilson_sgut.png" alt="WILSON Synthetic Gut">
+            <div class="string-info">
+              <p class="name">WILSON Synthetic Gut Power (white) 1.30mm</p>
+              <p class="price">$30</p>
+            </div>
+          </div>
 
           <div class="string-card">
             <img src="/images/Strings/Head_gut.png" alt="HEAD Synthetic Gut">
             <div class="string-info">
               <p class="name">HEAD Synthetic Gut (black) 1.30mm/G16</p>
-              <p class="price">$27</p>
+              <p class="price">$30</p>
             </div>
           </div>
 
-          <div class="string-card">
-            <img src="/images/Strings/wilson_sgut.png" alt="WILSON Synthetic Gut">
-            <div class="string-info">
-              <p class="name">WILSON Synthetic Gut White 1.30mm</p>
-              <p class="price">$27</p>
-            </div>
-          </div>
-
+          <!--
           <div class="string-card">
             <img src="/images/Strings/gamma.jpg" alt="GAMMA Synthetic Gut">
             <div class="string-info">
@@ -224,14 +229,15 @@
               <p class="price">$27</p>
             </div>
           </div>
-          
-         <div class="string-card">
+          -->
+
+          <div class="string-card">
             <img src="/images/Strings/Kirsch_black.png" alt="KIRSCHBAUM Synthetic Gut">
             <div class="string-info">
               <p class="name">KIRSCHBAUM Synthetic Gut (black) 1.30mm/G16</p>
               <p class="price">$25</p>
             </div>
-          </div> 
+          </div>
 
         </div>
       </div>
@@ -252,18 +258,18 @@
         </div>
       </div>
 
-    <script>
-      const filter = document.getElementById('filterSelect');
-      const groups = document.querySelectorAll('.string-group');
+      <script>
+        const filter = document.getElementById('filterSelect');
+        const groups = document.querySelectorAll('.string-group');
 
-      filter.addEventListener('change', () => {
-        const type = filter.value;
+        filter.addEventListener('change', () => {
+          const type = filter.value;
 
-        groups.forEach(group => {
-          const match = group.dataset.type === type || type === 'all';
-          group.style.display = match ? 'block' : 'none';
+          groups.forEach(group => {
+            const match = group.dataset.type === type || type === 'all';
+            group.style.display = match ? 'block' : 'none';
+          });
         });
-      });
       </script>
 
     </section>
@@ -275,4 +281,5 @@
     </footer>
 
 </body>
+
 </html>
